@@ -7,7 +7,7 @@ const Contact = () => {
 			<div id='contact' className='flex justify-center scroll-mt-20'>
 				<div className='flex flex-col items-center justify-around w-4/5 md:flex-row'>
 					<div>
-						<h1 className='text-center anton-regular hover-effect'>Please Contact Here</h1>
+						<h1 className='text-4xl text-center md:text-6xl anton-regular hover-effect'>Please Contact Here</h1>
 					</div>
 
 					<div className=''>

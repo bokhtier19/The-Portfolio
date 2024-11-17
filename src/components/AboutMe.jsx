@@ -10,7 +10,7 @@ const AboutMe = () => {
 			<div className='flex justify-center my-20 scroll-mt-24' id='about'>
 				<div className='flex flex-col items-center md:flex-row md:justify-around'>
 					<div className='text-center'>
-						<h1 className='anton-regular hover-effect'>About Me</h1>
+						<h1 className='text-4xl md:text-6xl anton-regular hover-effect'>About Me</h1>
 					</div>
 					<div className='w-5/6 text-center md:w-3/5'>
 						<div>

@@ -28,26 +28,26 @@ const Navbar = () => {
 				</div>
 
 				{/* Mobile Navigation */}
-				<div className={`${isSmall ? 'hidden' : 'block'} flex md:hidden justify-end mr-4`} onClick={() => setIsSmall(!isSmall)}>
+				<div className={`${isSmall ? 'hidden' : 'block'} flex md:hidden justify-end mr-4 hover:cursor-pointer`} onClick={() => setIsSmall(!isSmall)}>
 					<MdMenu size={50} color='white' />
 				</div>
 			</div>
 			{/* Mobile Menu */}
-			<div className={`${isSmall ? 'block' : 'hidden'} md:hidden bg-black sticky top-0 left-0 right-0 z-50 transition-all ease-in-out`}>
-				<div onClick={() => setIsSmall(!isSmall)} className='flex items-end justify-end mr-4'>
+			<div className={`${isSmall ? 'block' : 'hidden'} md:hidden bg-black sticky p-4 rounded-md top-0 left-0 right-0 z-50 transition-all ease-in-out`}>
+				<div onClick={() => setIsSmall(!isSmall)} className='flex items-end justify-end mr-4 hover:cursor-pointer'>
 					<RxCross2 color='white' size={50} />
 				</div>
-				<ul className='flex flex-col items-center gap-8 py-8 text-white uppercase border'>
-					<NavHashLink smooth to={'#'} onClick={() => setIsSmall(!isSmall)}>
+				<ul className='flex flex-col items-center gap-8 py-8 text-white uppercase border rounded-lg'>
+					<NavHashLink smooth to={'#'} onClick={() => setIsSmall(!isSmall)} className={`border-b`}>
 						Home
 					</NavHashLink>
-					<NavHashLink smooth to={'#projects'} onClick={() => setIsSmall(!isSmall)}>
+					<NavHashLink smooth to={'#projects'} onClick={() => setIsSmall(!isSmall)} className={`border-b`}>
 						My Projects
 					</NavHashLink>
-					<NavHashLink smooth to={'#about'} onClick={() => setIsSmall(!isSmall)}>
+					<NavHashLink smooth to={'#about'} onClick={() => setIsSmall(!isSmall)} className={`border-b`}>
 						About
 					</NavHashLink>
-					<NavHashLink smooth to={'#contact'} onClick={() => setIsSmall(!isSmall)}>
+					<NavHashLink smooth to={'#contact'} onClick={() => setIsSmall(!isSmall)} className={`border-b`}>
 						Contact
 					</NavHashLink>
 				</ul>

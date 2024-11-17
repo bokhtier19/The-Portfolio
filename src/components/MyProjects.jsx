@@ -31,7 +31,7 @@ const MyProjects = () => {
 			<div className='flex flex-row-reverse items-center justify-center scroll-mt-24' id='projects'>
 				<div className='flex flex-col items-center justify-around my-20 md:flex-row-reverse'>
 					<div>
-						<h1 className='text-center anton-regular hover-effect'>My Project and Works</h1>
+						<h1 className='text-4xl text-center anton-regular hover-effect md:text-6xl '>My Project and Works</h1>
 					</div>
 
 					<div className='grid w-3/5 grid-cols-1 gap-6 md:grid-cols-2'>
