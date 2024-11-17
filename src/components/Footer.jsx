@@ -10,7 +10,7 @@ const Footer = () => {
 	const socials = [
 		{
 			Media: 'Twitter',
-			Link: '',
+			Link: 'https://x.com/BokhtierElius',
 			Icon: <BsTwitterX color='white' size={40} />,
 		},
 		{
@@ -43,11 +43,11 @@ const Footer = () => {
 	return (
 		<>
 			<div className='bg-black'>
-				<div className='flex py-8 gap-4 justify-center'>
+				<div className='flex justify-center gap-4 py-8'>
 					{socials
 						.filter((social) => social.Link) // Only include socials with a Link
 						.map((social, index) => (
-							<a key={index} href={social.Link} target='_blank' rel='noopener noreferrer'>
+							<a key={index} href={social.Link} target='_blank' rel='noopener noreferrer' className='hover-effect'>
 								{social.Icon}
 							</a>
 						))}
@@ -58,7 +58,7 @@ const Footer = () => {
 				</div>
 
 				<div>
-					<p className='text-center text-xs text-white tracking-wider py-4'>&copy; 2024 Elius Bokhtier. All rights reserved.</p>
+					<p className='py-4 text-xs tracking-wider text-center text-white'>&copy; 2024 Elius Bokhtier. All rights reserved.</p>
 				</div>
 			</div>
 		</>

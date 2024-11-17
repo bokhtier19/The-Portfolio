@@ -8,21 +8,21 @@ const Navbar = () => {
 
 	return (
 		<>
-			<div className='sticky bg-black top-0'>
+			<div className='sticky top-0 bg-black'>
 				{/* Desktop Navigation */}
-				<div className='hidden md:flex items-center justify-around tracking-wider py-4'>
-					<ul className='flex items-center gap-8 uppercase text-white'>
-						<NavHashLink smooth to={'#'}>
+				<div className='items-center justify-around hidden py-4 text-sm font-semibold tracking-wider md:flex'>
+					<ul className='flex items-center gap-8 text-white uppercase'>
+						<NavHashLink smooth to={'#'} className={`hover-effect`}>
 							Home
 						</NavHashLink>
-						<NavHashLink smooth to={'#projects'}>
+						<NavHashLink smooth to={'#projects'} className={`hover-effect`}>
 							My Projects
 						</NavHashLink>
-						<NavHashLink smooth to={'#about'}>
+						<NavHashLink smooth to={'#about'} className={`hover-effect`}>
 							About
 						</NavHashLink>
-						<NavHashLink smooth to={'#contact'}>
-							Contact
+						<NavHashLink smooth to={'#contact'} className={`hover-effect`}>
+							Contact Me
 						</NavHashLink>
 					</ul>
 				</div>
@@ -34,10 +34,10 @@ const Navbar = () => {
 			</div>
 			{/* Mobile Menu */}
 			<div className={`${isSmall ? 'block' : 'hidden'} md:hidden bg-black sticky top-0 left-0 right-0 z-50 transition-all ease-in-out`}>
-				<div onClick={() => setIsSmall(!isSmall)} className='flex items-end justify-end  mr-4'>
+				<div onClick={() => setIsSmall(!isSmall)} className='flex items-end justify-end mr-4'>
 					<RxCross2 color='white' size={50} />
 				</div>
-				<ul className='flex flex-col items-center gap-8 uppercase text-white py-8'>
+				<ul className='flex flex-col items-center gap-8 py-8 text-white uppercase border'>
 					<NavHashLink smooth to={'#'} onClick={() => setIsSmall(!isSmall)}>
 						Home
 					</NavHashLink>

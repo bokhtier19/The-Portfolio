@@ -7,17 +7,18 @@ const Intro = () => {
 		<>
 			<div
 				id='intro'
-				className='min-h-screen overflow-hidden bg-center bg-fit'
+				className='h-screen md:h-[95vh]'
 				style={{
 					backgroundImage: `url(${IntroImage})`,
 					backgroundSize: 'cover',
-					height: '95vh',
+					backgroundPosition: 'left center',
 				}}>
-				<div className='flex flex-col justify-end w-full mt-[20vh] md:mt-[30vh] items-end text-center'>
-					<div className='flex flex-col justify-end mr-20'>
-						<h2 className='anton-regular'>Hello There!</h2>
-						<h1 className='text-white  p-4 rounded-md bg-black  text-4xl md:text-6xl tracking-wider uppercase anton-regular'>I am Elius Bokhtier</h1>
-						<p className='anton-regular'>A frontend web developer based in India.</p>
+				{/* Navbar could be here if needed */}
+				<div className='flex flex-col items-center justify-center w-full h-full px-6 text-center md:items-end md:px-20 md:bg-left-center'>
+					<div className='flex flex-col justify-end'>
+						<h2 className='mb-2 text-xl tracking-widest text-white md:text-2xl md:text-black anton-regular'>Hello There!</h2>
+						<h1 className='p-4 text-2xl tracking-wider text-white uppercase bg-black rounded-md md:text-5xl anton-regular hover-effect'>I am Elius Bokhtier</h1>
+						<p className='mt-2 text-sm tracking-wider text-white md:text-lg md:text-black anton-regular'>A frontend web developer based in India.</p>
 					</div>
 				</div>
 			</div>
