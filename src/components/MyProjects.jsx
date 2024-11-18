@@ -9,20 +9,20 @@ const MyProjects = () => {
 			link: 'https://bokhtier19.github.io/Bark-and-Brawl/',
 		},
 		{
+			title: 'Anulipi',
+			description: 'This is a project of me trying to clone a story writing website PRATILIPI.',
+			link: 'https://bokhtier19.github.io/Anulipi/',
+		},
+		{
 			title: 'Often',
 			description: 'A project of an e-commerce website using React.js, Tailwind CSS, and Node.js, a bit based on a tutorial.',
 			link: 'https://often-frontend.vercel.app/',
 		},
-		{
-			title: 'Story-Site',
-			description: 'This is me Trying to clone a story writing website PRATILIPI.',
-			link: 'https://github.com/bokhtier19/Story-Site.git',
-		},
 
 		{
-			title: 'A protfolio site',
-			description: 'This React portfolio site uses HashLinks for auto-scrolling, with plans to add animations like Framer Motion.',
-			link: 'https://github.com/bokhtier19/Portfolio.git',
+			title: 'Whispers of Teal',
+			description: 'This blog project was my first step into React development, created while I was a beginner, to explore and learn fundamental web development concepts.',
+			link: 'https://bokhtier19.github.io/Whispers-of-Teal/',
 		},
 	];
 
